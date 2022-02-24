@@ -1,0 +1,24 @@
+<%- include("header") -%>
+
+<div class="wrapper-wrapper">
+  <div class="wrapper">
+    <section id="heading">
+      <h1>Result</h1>
+    </section>
+    <section id="body">
+      <div class="container">
+        <h4>The date is: <%=date%></h4>
+        <h4>The conversion rate is: <%=value%></h4>
+        <h4>The final value is: <%=total%></h4>
+      </div>
+      <form action="/result" method="post">
+        <button class="button" type="submit" name="button">Return to home</button>
+      </form>
+    </section>
+  </div>
+  <div class="wrapper footer">
+    <span class="name-text">© Yash Bijoor</span>
+  </div>
+</div>
+
+<%- include("footer") -%>

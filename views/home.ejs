@@ -1,0 +1,26 @@
+<%- include("header") -%>
+
+<div class="wrapper-wrapper">
+  <div class="wrapper">
+    <section class="flex-wrapper" id="heading">
+      <h1>Real-time Currency Conversion</h1>
+    </section>
+    <section class="flex-wrapper" id="main">
+      <form class="form" action="/" method="post">
+        <div class="flex-item from">
+          <input class="flex-flex-item input-bar-1" type="text" name="from" placeholder="From (example: USD)">
+          <input class="flex-flex-item input-bar-2" type="number" name="amount" placeholder="amount (example: 3)">
+        </div>
+        <div class="flex-item to">
+          <input class="flex-flex-item input-bar-3" type="text" name="to" placeholder="To (example: EUR)">
+          <button class="flex-flex-item btn" type="submit" name="button">Check</button>
+        </div>
+      </form>
+    </section>
+  </div>
+  <div class="wrapper footer">
+    <span class="name-text">© Yash Bijoor</span>
+  </div>
+</div>
+
+<%- include("footer") -%>
